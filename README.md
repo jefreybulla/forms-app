@@ -1,4 +1,7 @@
 # FormsApp
+FormsApp is full-stack mono-repo to serve and render forms. There are two apps in this project:
+- forms-api: provides an API to serve forms and post user's answers. 
+- forms-app: React app to render forms and handle the user experience. 
 
 ## Requirements
 - Install NX globally with `npm i -g nx`
