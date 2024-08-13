@@ -29,7 +29,9 @@ This app uses the file `db.json` to store all data related to form questions and
 - Add error handling in front-end
 - Add error handling in back-end
 - Add data validation in back-end
-- Add unit tests
+- Add API documentation
+- Add unit tests in front-end
+- Add unit tests in back-end
 
 ## Running tasks
 
