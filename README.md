@@ -17,6 +17,17 @@ Run React app
 nx serve forms-app
 ```
 
+## to-do to finish and improce app 
+- Add logic to submit answers correctly for multiple choice and multiple answers
+- Organize React components in multiple files
+	- RenderInputs
+	- Get/Post calls
+- Add CSS styles
+- Add error handling in front-end
+- Add error handling in back-end
+- Add data validation in back-end
+- Add unit tests
+
 ## Running tasks
 
 Run tests
