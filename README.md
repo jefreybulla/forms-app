@@ -17,6 +17,9 @@ Run React app
 nx serve forms-app
 ```
 
+## Database
+This app uses the file `db.json` to store all data related to form questions and user answwers.
+
 ## To-do list to finish and improve app 
 - Add logic to submit answers correctly for multiple choice with multiple answers (`multiple_choice_multiple`)
 - Organize React components in multiple files
