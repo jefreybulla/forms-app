@@ -17,7 +17,7 @@ Run React app
 nx serve forms-app
 ```
 
-## to-do to finish and improce app 
+## To-do list to finish and improve app 
 - Add logic to submit answers correctly for multiple choice and multiple answers
 - Organize React components in multiple files
 	- RenderInputs
