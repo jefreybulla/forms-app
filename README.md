@@ -18,7 +18,7 @@ nx serve forms-app
 ```
 
 ## To-do list to finish and improve app 
-- Add logic to submit answers correctly for multiple choice and multiple answers
+- Add logic to submit answers correctly for multiple choice with multiple answers (`multiple_choice_multiple`)
 - Organize React components in multiple files
 	- RenderInputs
 	- Get/Post calls
