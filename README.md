@@ -4,16 +4,17 @@
 - Install NX globally with `npm i -g nx`
 - Install [nvm](https://github.com/nvm-sh/nvm)
 - Install Node version specified in `.nvmrc` by running `nvm install`
+- Install dependencies with `npm install`
 
 ## Start the application
+Run API app
+```
+nx serve forms-api
+```
 
 Run React app
 ```
 nx serve forms-app
-```
-Run API app
-```
-nx serve forms-api
 ```
 
 ## Running tasks

@@ -1,0 +1,70 @@
+{
+    "questions": [
+        {
+            "title": "Text question",
+            "content": "What is your name?",
+            "total_questions": 3,
+            "current_question": 1,
+            "type": "text"
+        },
+        {
+            "title": "Mutiple choice question with unique answer",
+            "content": "What is your favorite color?",
+            "options": [
+                "Red",
+                "Blue",
+                "Green",
+                "Yellow"
+            ],
+            "total_questions": 3,
+            "current_question": 2,
+            "type": "mutiple_choice_unique"
+        },
+        {
+            "title": "Multiple choice question with multiple answers",
+            "content": "Which sports do you like?",
+            "options": [
+                "Soccer",
+                "Basketball",
+                "Tennis",
+                "Swimming"
+            ],
+            "total_questions": 3,
+            "current_question": 3,
+            "type": "mutiple_choice_multiple"
+        }
+    ],
+    "responses": [
+        {
+            "question_id": 0,
+            "unique_response": "response 1",
+            "mutiple_response": []
+        },
+        {
+            "question_id": 1,
+            "unique_response": "response 1",
+            "mutiple_response": []
+        },
+        {
+            "question_id": 2,
+            "unique_response": "",
+            "mutiple_response": [
+                "response 1",
+                "reponse 2"
+            ]
+        },
+        {
+            "question_id": 1,
+            "unique_response": "Bill",
+            "mutiple_response": []
+        },
+        {
+            "question_id": 2,
+            "unique_response": "",
+            "multiple_response": [
+                "Soccer",
+                "Tennis"
+            ]
+        }
+    ]
+}
