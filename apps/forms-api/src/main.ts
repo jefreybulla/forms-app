@@ -8,6 +8,13 @@ const app = express();
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.use(express.json());
 
+app.use(function (req, res, next) {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader('Access-Control-Allow-Methods', '*');
+  res.setHeader("Access-Control-Allow-Headers", "*");
+  next();
+});
+
 const db = new JsonDB(new Config("db", true, true, '/'));
 
 app.get('/api', (req, res) => {
@@ -36,11 +43,10 @@ try {
   app.post("/api/responses", async (req, res) => {
     console.log('adding a form response...')
     const question_id = await req?.body?.question_id;
-    const unique_response = await req?.body?.unique_response?? "";
-    const multiple_response = await req?.body?.multiple_response ?? [];
+    const response = await req?.body?.response ?? [];
     const responses = await db.getData("/responses");
     const id = responses.length ?? 0;
-    await db.push(`/responses[${id}]`, {question_id, unique_response, multiple_response});
+    await db.push(`/responses[${id}]`, {question_id, response});
     res.status(201).json("Response created in db");
   })
 }
